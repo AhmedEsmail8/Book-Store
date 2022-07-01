@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script type="text/javascript" >
+        function preventBack(){window.history.forward();}
+        setTimeout("preventBack()", 0);
+        window.onunload=function(){null};
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="login.css" rel="stylesheet">
+    <title>login</title>
+
+    <link rel="icon" href="logo.png">
+
+    <!-- Abel font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+    <!-- Encode Sans Semi Expanded font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="parent">
+    <div class="form">
+    <h1>login</h1>
+    <input type="text" name="username" id="username" placeholder="username" required />
+    <input type="password" name="password" id="password" placeholder="password" required />
+    <button id="submit">login</button>
+    <a href="signup.html">create account ?</a>
+    </div>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

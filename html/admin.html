@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <script type="text/javascript" >
+        function preventBack(){window.history.forward();}
+        setTimeout("preventBack()", 0);
+        window.onunload=function(){null};
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin page</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- Boxicons JS -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxs-book-open'></i>
+            <span class="logo_name">Hello admin</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-home'></i>
+                    <span class="link_name tar" onclick="window.location.href='home.html'">home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name">dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-list-ul'></i>
+                    <span class="link_name">orderlist</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-coin-stack'></i>
+                    <span class="link_name">stock</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-group'></i>
+                    <span class="link_name">team</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <span class="link_name">favorites</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-message-rounded-dots'></i>
+                    <span class="link_name">messages</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="link_name">setting</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-log-out'></i>
+                    <span class="link_name tar" onclick="window.location.href='../log in/login.html'" >logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- ///////////// -->
+
+    <h2 class="headline">Update head line</h2>
+    <input type="text" name="headlineInput" id="headlineInput">
+    <button id="updateButton">update</button>
+
+    <div class="darkm">
+        <button onclick="mode()" id="darkButton">Mode</button>
+    </div>
+
+    <!-- <h2 class="paragraph">Update paragraph</h2>
+        <input type="text" name="paragraphInput" id="paragraphInput">
+        <button id="updateButton2">update</button> -->
+
+        <script src="../javascript/admin.js"></script>
+</body>
+
+</html>

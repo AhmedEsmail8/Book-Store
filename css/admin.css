@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Pro);
+body
+{
+    min-height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-color: #0075d8;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 240px;
+    background: #0a2558;
+    margin: 0px;
+}
+
+.sidebar .logo-details {
+height: 80px;
+width: 100%;
+display: flex;
+align-items: center;
+}
+
+.sidebar .logo-details i{
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    min-width: 60;
+    text-align: center;
+}
+
+.sidebar .logo-details .logo_name {
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.sidebar .nav-links{
+    margin-top: 16px;
+    margin-right: 200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sidebar .nav-links li{
+height: 50px;
+width: 200%;
+list-style:none;
+}
+
+.sidebar .nav-links li a{
+    height: 100%;
+    width: 500%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+/* .sidebar .nav-links li a :hover{
+    background: #7d98c9;
+} */
+
+.sidebar .nav-links li a i{
+    min-width: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+i,
+span {
+    cursor: default;
+}
+
+.tar {
+    cursor: pointer;
+}
+
+.tar:hover {
+    text-decoration: underline;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    background-color: #0a2558;
+}
+
+.sidebar .nav-links li a .link_name{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.headline{
+    text-align: center;
+    position: relative;
+    margin-top: 0px;
+    top: 50px;
+}
+
+#updateButton{
+    position: relative;
+    margin: auto;
+    display: inline-block;
+    top: 35px;
+}
+
+#headlineInput{
+    position: relative;
+    margin-left: 44%;
+    display: inline-block;
+    top: 35px;
+}
+
+.paragraph{
+    text-align: center;
+    position: relative;
+    margin-top: 0px;
+    top: 100px;
+}
+
+.darkm #darkButton {
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    position:center;
+    position: relative;
+    display: inline-block;
+    left: 70%;
+
+}
+
+.dark {
+    background-color: #222;
+    color: #e6e6e6;
+
+}

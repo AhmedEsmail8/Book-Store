@@ -1,0 +1,119 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: linear-gradient(to bottom, #f0f0f0, #0075d8);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  font-family: Abel;
+}
+
+.parent {
+  width: 800px;
+  height: 600px;
+  border-radius: 8px;
+  position: relative;
+  margin-top: 80px;
+  margin-left: calc((100% - 800px) / 2);
+}
+
+.form {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  width: 400px;
+  height: 600px;
+  top: 0px;
+  left: 0px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+h1 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.logo {
+  position: absolute;
+  left: 400px;
+  width: 400px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 0px 8px 8px 0px;
+}
+
+img {
+  width: 200px;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+#username,
+#password,
+#name {
+  width: 300px;
+  height: 25px;
+  position: absolute;
+  left: 50px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  text-align: center;
+}
+
+#name {
+  top: 40%;
+}
+
+#username {
+  top: 50%;
+}
+
+#password {
+  top: 60%;
+}
+
+#submit {
+  position: absolute;
+  top: 70%;
+  width: 150px;
+  left: 125px;
+  border-radius: 5px;
+  outline: none;
+  border-color: transparent;
+  transition-duration: 0.5s;
+  padding: 5px;
+}
+
+#submit:hover {
+  background-color: #0075d8;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+a {
+  color: #fff;
+  margin-top: 200px;
+  font-weight: bold;
+}
+
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+span::selection,
+a::selection {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+p,
+h1,
+h2,
+h3,
+span {
+  cursor: default;
+}
